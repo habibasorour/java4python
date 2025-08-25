@@ -15,7 +15,7 @@
             For example:
         </p>
 
-        <program interactive="activecode" language="python">
+        <program  xml:id="python-definite-loop"  interactive="activecode" language="python">
             <code>
 for i in range(10):
     print(i)
@@ -26,7 +26,7 @@ for i in range(10):
             In Java, we would write this as:
         </p>
 
-        <program interactive="activecode" language="java">
+        <program  xml:id="pjava-definite-loop" interactive="activecode" language="java">
             <code>
 public class DefiniteLoopExample {
     public static void main(String[] args) {
@@ -65,7 +65,7 @@ public class DefiniteLoopExample {
             If you want to start at 100, stop at 0 and count backward by 5, the Python loop would be written as:
         </p>
 
-        <program interactive="activecode" language="python">
+        <program xml:id="python-deinite-decrement" interactive="activecode" language="python">
             <code>
 for i in range(100, -1, -5):
     print(i)
@@ -76,7 +76,7 @@ for i in range(100, -1, -5):
             In Java, we would write this as:
         </p>
 
-        <program interactive="activecode" language="java">
+        <program xml:id="java-definite-decrement" interactive="activecode" language="java">
             <code>
 public class DefiniteLoopBackward {
     public static void main(String[] args) {
@@ -97,7 +97,7 @@ public class DefiniteLoopBackward {
             In Python, we can iterate over a list as follows:
         </p>
 
-        <program interactive="activecode" language="python">
+        <program  xml:id="python-list-iteration" interactive="activecode" language="python">
             <code>
 l = [1, 1, 2, 3, 5, 8, 13, 21]
 for fib in l:
@@ -109,7 +109,7 @@ for fib in l:
             In Java we can iterate over an <c>ArrayList</c> of integers too. Note that this requires importing the <c>ArrayList</c> class.
         </p>
 
-        <program interactive="activecode" language="java">
+        <program xml:id="java-list-iteration" interactive="activecode" language="java">
             <code>
 import java.util.ArrayList;
 
@@ -134,10 +134,10 @@ public class ForEachArrayListExample {
 
         <p>
             This example stretches the imagination a bit, and in fact points out one area where Java's primitive arrays are easier to use than an array list.
-            In fact all primitive arrays can be used in a for each loop.
+            In fact, all primitive arrays can be used in a <term>for each</term> loop.
         </p>
 
-        <program interactive="activecode" language="java">
+        <program xml:id="java-for-each" interactive="activecode" language="java">
             <code>
 public class ForEachArrayExample {
     public static void main(String[] args) {
@@ -154,7 +154,7 @@ public class ForEachArrayExample {
             To iterate over the characters in a string in Java do the following:
         </p>
 
-        <program interactive="activecode" language="java">
+        <program xml:id="java-string-iteration" interactive="activecode" language="java">
             <code>
 public class StringIterationExample {
     public static void main(String[] args) {
@@ -176,7 +176,7 @@ public class StringIterationExample {
             Both Python and Java support the <c>while</c> loop, which continues to execute as long as a condition is true.
             Here is a simple example in Python that counts down from 5:
         </p>
-        <program interactive="activecode" language="python">
+        <program xml:id="python-countdown" interactive="activecode" language="python">
             <code>
 i = 5
 while i &gt; 0:
@@ -186,9 +186,9 @@ while i &gt; 0:
         </program>
 
         <p>
-            In Java we add parenthesis and curly braces. Here is the same countdown loop in Java:
+            In Java, we add parentheses and curly braces. Here is the same countdown loop in Java:
         </p>
-        <program interactive="activecode" language="java">
+        <program xml:id="java-countdown" interactive="activecode" language="java">
             <code>
 public class WhileLoopExample {
     public static void main(String[] args) {
@@ -210,7 +210,7 @@ public class WhileLoopExample {
             For example, the following loop will execute once even though the condition is initially false.
         </p>
 
-        <program interactive="activecode" language="java">
+        <program xml:id="java-do-while" interactive="activecode" language="java">
             <code>
 public class DoWhileExample {
     public static void main(String[] args) {
