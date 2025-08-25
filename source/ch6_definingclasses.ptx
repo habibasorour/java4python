@@ -66,7 +66,7 @@
                 </p>
 
 
-                <program interactive="activecode" language="python">
+                <program xml:id="python-fracion-class1" interactive="activecode" language="python">
                     <code>
         class Fraction:
             def __init__(self, num, den):
@@ -137,7 +137,7 @@
                 </p>
 
 
-                <program language="java">
+                <program xml:id="java-fraction-class1" language="java">
                     <code>
         public class Fraction {
             private Integer numerator;
@@ -152,7 +152,7 @@
                 </p>
 
 
-                <program language="java">
+                <program xml:id="java-private" language="java">
                     <code>
         Fraction f = new Fraction(1,2);
         Integer y = f.numerator * 10;
@@ -168,7 +168,7 @@
                 </p>
 
 
-        <program language="java">
+        <program xml:id="java-getter-and-setter" language="java">
             <code>
 public Integer getNumerator() {
     return numerator;
@@ -199,7 +199,7 @@ public void setDenominator(Integer denominator) {
         </p>
 
 
-        <program language="java">
+        <program xml:id="java-fraction-constructor" language="java">
             <code>
 public Fraction(Integer top, Integer bottom) {
     num = top;
@@ -220,7 +220,7 @@ public Fraction(Integer top, Integer bottom) {
         </p>
 
 
-        <program language="java">
+        <program xml:id="java-fraction-class-this" language="java">
             <code>
 public Fraction(Integer num, Integer den) {
     this.num = num;
@@ -276,7 +276,7 @@ public Fraction(Integer num, Integer den) {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-fraction-class-addition" language="java">
                 <code>
 public Fraction add(Fraction otherFrac) {
     Integer newNum = otherFrac.getDenominator() * this.numerator +
@@ -296,11 +296,11 @@ public Fraction add(Fraction otherFrac) {
             <p>
                 Second, you will notice that the method makes use of the <c>this</c> variable.
                 In this method, <c>this</c> is not necessary, because there is no ambiguity about the <c>numerator</c> and <c>denominator</c> variables.
-                So this version of the code is equivalent:
+                So the following version of the code is equivalent:
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-fraction-class-addition2" language="java">
                 <code>
 public Fraction add(Fraction otherFrac) {
     Integer newNum = otherFrac.getDenominator() * numerator +
@@ -361,7 +361,7 @@ public Fraction add(Fraction otherFrac) {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-method-overloading" language="java">
                 <code>
 public Fraction(Integer num) {
     this.numerator = num;
@@ -385,7 +385,7 @@ public Fraction add(Integer other) {
             </p>
 
 
-            <program interactive="activecode" language="java">
+            <program xml:id="java-full-fraction-class" interactive="activecode" language="java">
                 <code>
 public class Fraction {
     private Integer numerator;
@@ -441,7 +441,7 @@ public class Fraction {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-no-friendly-output" language="java">
                 <code>
 Fraction@6ff3c5b5
                 </code>
@@ -531,7 +531,7 @@ Fraction@6ff3c5b5
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-tostring" language="java">
                 <code>
 public String toString() {
     return numerator.toString() + "/" + denominator.toString();
@@ -549,18 +549,18 @@ public String toString() {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-class-equalqqual" language="java">
                 <code>
 object1 == object2
                 </code>
             </program>
 
             <p>
-                is NOT the same as
+                is NOT the same as:
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-class-dot-equals" language="java">
                 <code>
 object1.equals(object2)
                 </code>
@@ -571,7 +571,7 @@ object1.equals(object2)
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-fraction-equals" language="java">
                 <code>
 public boolean equals(Fraction other) {
     Integer num1 = this.numerator * other.getDenominator();
@@ -610,7 +610,7 @@ public boolean equals(Fraction other) {
             </p>
 
 
-            <program language="java">
+            <program xml:id="pjava-extends" language="java">
                 <code>
 public class Fraction extends Number {
     ...
@@ -661,7 +661,7 @@ public class Fraction extends Number {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-object-type-conversions" language="java">
                 <code>
 public double doubleValue() {
     return numerator.doubleValue() / denominator.doubleValue();
@@ -696,7 +696,7 @@ public long longValue() {
             </p>
 
 
-            <program language="java">
+            <program xml:id="java-ugly-add-method" language="java">
                 <code>
 public void test(Number a, Number b) {
     a.add(b);
@@ -745,7 +745,7 @@ public void test(Number a, Number b) {
         </p>
 
 
-        <program language="text">
+        <program  xml:id="java-comparable" language="text">
             <code>
 int compareTo(T o)
 Compares this object with the specified object for order. Returns a
@@ -763,7 +763,7 @@ iff y.compareTo(x) throws an exception.)
         </p>
 
 
-        <program language="java">
+        <program  xml:id="java-make-comparable"  language="java">
             <code>
 public class Fraction extends Number implements Comparable&lt;Fraction&gt; {
     ...
@@ -777,7 +777,7 @@ public class Fraction extends Number implements Comparable&lt;Fraction&gt; {
         </p>
 
 
-        <program language="java">
+        <program  xml:id="java-comparable2"  language="java">
             <code>
 public int compareTo(Fraction other) {
     Integer num1 = this.numerator * other.getDenominator();
@@ -794,12 +794,12 @@ public int compareTo(Fraction other) {
         <p>
             Suppose that you wanted to write a Student class so that the class could keep track of the number of students it had created.
             Although you could do this with a global counter variable that is an ugly solution.
-            The right way to do it is to use a static variable.
-            In Python we could do this as follows:
+            The right way to do it is to use a <c>static</c> variable.
+            In Python, we could do this as follows:
         </p>
 
 
-        <program interactive="activecode" language="python">
+        <program  xml:id="python-static" interactive="activecode" language="python">
             <code>
 class Student:
     numStudents = 0
@@ -816,11 +816,11 @@ main()
         </program>
 
         <p>
- In Java we would write this same example using a static declaration. 
+ In Java, we would write this same example using a <c>static</c> declaration. 
         </p>
 
 
-        <program interactive="activecode" language="java">
+        <program  xml:id="java-static"  interactive="activecode" language="java">
             <code>
 public class Student {
     public static Integer numStudents = 0;
@@ -855,7 +855,7 @@ public class Student {
         </p>
 
 
-        <program language="java">
+        <program  xml:id="java-gcd"  language="java">
             <code>
 private static Integer gcd(Integer m, Integer n) {
     while (m % n != 0) {
@@ -878,7 +878,7 @@ private static Integer gcd(Integer m, Integer n) {
         </p>
 
 
-        <program interactive="activecode" language="java">
+        <program  xml:id="java-final-fraction-class"  interactive="activecode" language="java">
             <code>
 import java.util.ArrayList;
 import java.util.Collections;
