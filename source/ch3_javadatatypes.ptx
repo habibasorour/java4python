@@ -95,7 +95,7 @@
             </p>
 
 
-            <program interactive="activecode" language="python">
+            <program xml:id="python-temperature-conversion" interactive="activecode" language="python">
                 <code>
 def main():
     fahr = int(input("Enter the temperature in F: "))
@@ -110,7 +110,7 @@ main()
             </p>
 
 
-            <program interactive="activecode" language="java">
+            <program xml:id="java-temperature-conversion" interactive="activecode" language="java">
                 <code>
 import java.util.Scanner;
 public class TempConv {
@@ -431,7 +431,7 @@ if (myAnimal instanceof Dog) {
         </p>
 
 
-        <program interactive="activecode" language="python">
+        <program xml:id="python-input-file1" interactive="activecode" language="python">
             <code>
 def main():
     count = [0]*10
@@ -528,7 +528,7 @@ Here is the Java code needed to write the exact same program:
             </p>
         </note>
 
-        <program interactive="activecode" language="java" datafile="test.dat">
+        <program xml:id="java-null-object" interactive="activecode" language="java" datafile="test.dat">
             <code>
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -655,11 +655,11 @@ public class Histo {
         <title>Arrays</title>
 
         <p>
- As I said at the outset of this section, we are going to use Java <c>ArrayLists</c> because they are easier to use and more closely match the way that Python lists behave. However, if you look at Java code on the internet or even in your Core Java books you are going to see examples of something called arrays. In fact you have already seen one example of an array declared in the &#x2018;Hello World&#x2019; program. Lets rewrite this program to use primitive arrays rather than array lists. 
+ As was said at the outset of this section, we are going to use Java <c>ArrayLists</c> because they are easier to use and more closely match the way that Python lists behave. However, if you look at Java code on the internet or even in your core Java books you are going to see examples of something called an array. In fact, you have already seen one example of an array declared in the &#x2018;Hello World&#x2019; program. Let's rewrite this program to use primitive arrays rather than array lists. 
         </p>
 
 
-        <program interactive="activecode" language="java" datafile="test.dat">
+        <program xml:id="java-array" interactive="activecode" language="java" datafile="test.dat">
             <code>
 import java.util.Scanner;
 import java.io.File;
@@ -708,7 +708,7 @@ public class HistoArray {
         </p>
 
 
-        <program interactive="activecode" language="python">
+        <program xml:id="python-input-file2" interactive="activecode" language="python">
             <code>
 def main():
     data = open('alice30.txt')
@@ -755,7 +755,7 @@ main()
         </p>
 
 
-        <program interactive="activecode" language="java" datafile="alice30.txt">
+        <program xml:id="java-use-input-file" interactive="activecode" language="java" datafile="alice30.txt">
             <code>
 import java.util.Scanner;
 import java.util.ArrayList;

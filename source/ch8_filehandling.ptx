@@ -10,17 +10,17 @@
             File handling is an integral part of programming. Most programming languages have the ability to create, read from, write to, and delete, files. In Python, most built-in libraries are available without needing  to explicitly import additional packages, but some libraries like <c>math</c> do need to be imported. Consider the following.
         </p>
         <program xml:id = "file-class-import-Python-example" interactive="activecode" language="python">
-            <input>
+            <code>
             import math
             print(math.sqrt(25))
-            </input> 
+            </code> 
         </program>
 
         <p>
             Delete the first line that says <c>import math</c> and see what happens. The <c>import math</c> is needed. The same program in Java would look like this:
         </p>
         <program xml:id = "file-class-import-Java-example" interactive="activecode" language="java">
-            <input>
+            <code>
             import java.lang.Math;
 
             public class SquareRoot {
@@ -28,7 +28,7 @@
                     System.out.println(Math.sqrt(25));
                 }
             }
-            </input> 
+            </code> 
         </program>
         <p>
             Note the use of <c>import java.lang.Math;</c> in the above to import the <c>Math</c> class. Unlike Python, Java requires explicit <c>import</c> for most libraries, including the <c>Math</c> class and many  classes related to file handling.
@@ -107,7 +107,7 @@ public class CreateFile {
         </p>
         
         <program xml:id="create-file-python" interactive="activecode" language="python">
-            <input>
+            <code>
             filename = "newfile.txt"
             print("Attempting to write to '" + filename + "' using 'w' mode...")
             try:
@@ -118,7 +118,7 @@ public class CreateFile {
                 # This would only catch other unexpected errors
                 print("An unexpected error occurred during write: " + str(e))
 
-            </input> 
+            </code> 
         </program>
 
         <p>
@@ -126,7 +126,7 @@ public class CreateFile {
         </p>
         
         <program xml:id="create-file-java" interactive="activecode" language="java">
-            <input>
+            <code>
             import java.io.File;
             import java.io.IOException;
 
@@ -146,7 +146,7 @@ public class CreateFile {
                     }
                 }
             }
-            </input> 
+            </code> 
         </program>
 
         <note>
@@ -179,7 +179,7 @@ public class CreateFile {
             </datafile>
 
         <program xml:id="file-read-python" interactive="activecode" language="python" add-files="myfile-read">
-            <input>
+            <code>
                 filename = "myfile.txt"
                 try:
                 # Attempt to open the file in read mode ('r')
@@ -190,7 +190,7 @@ public class CreateFile {
                 except:
                 #catches if the file doesn't exist or can't be written to
                     print("file could not be opened")
-            </input>
+            </code>
         </program>
 
         <p>
@@ -198,7 +198,7 @@ public class CreateFile {
         </p>
 
         <program xml:id="file-read-java" interactive="activecode"  language="java" add-files= "myfile-read">
-            <input>
+            <code>
             import java.io.File;
             import java.io.FileNotFoundException;
             import java.util.Scanner;
@@ -216,7 +216,7 @@ public class CreateFile {
                     }
                 }
             }
-            </input> 
+            </code> 
         </program>
         <p>
             You may have noticed that there are some new methods you haven't seen yet. The <c>hasNextLine()</c> method checks if there is a next line in the file, and returns <c>false</c> if there isn't. This method allows us to iterate over every line till there is no next line. The <c>nextLine()</c> method of the Scanner object returns the next line in the file as a string.
@@ -325,7 +325,7 @@ public class CreateFile {
                 </pre>
         </datafile>
         <program xml:id="file-write-full-python" interactive="activecode" language="python" add-files="my-file-8-4-4">
-            <input>
+            <code>
             try:
                 with open("myfile.txt", "w") as my_writer:
                     my_writer.write("File successfully updated!")
@@ -334,7 +334,7 @@ public class CreateFile {
                 print("An error occurred.")
                 import traceback
                 traceback.print_exc()
-            </input> 
+            </code> 
         </program>
 
         <p>
@@ -346,7 +346,7 @@ public class CreateFile {
                 </pre>
             </datafile>
         <program xml:id="file-write-full-java" interactive="activecode" language="java" add-files = "my-file-8-4-5">
-            <input>
+            <code>
             import java.io.FileWriter;
             import java.io.IOException;
 
@@ -363,7 +363,7 @@ public class CreateFile {
                     }
                 }
             }
-            </input> 
+            </code> 
         </program>
 
         <note>
@@ -389,7 +389,7 @@ public class CreateFile {
                 </pre>
             </datafile>
         <program xml:id="file-write-with-append" interactive="activecode" language="java" add-files = "my-file-8-4-6">
-            <input>
+            <code>
             import java.io.FileWriter;
             import java.io.IOException;
 
@@ -406,7 +406,7 @@ public class CreateFile {
                     }
                 }
             }
-            </input> 
+            </code> 
         </program>
 
         <p>
@@ -444,7 +444,7 @@ public class CreateFile {
         </p>
 
         <program xml:id="create-file-to-delete-java" interactive="activecode" language="java">
-            <input>
+            <code>
             import java.io.File;
             import java.io.IOException;
 
@@ -464,7 +464,7 @@ public class CreateFile {
                     }
                 }
             }
-            </input> 
+            </code> 
         </program>
         
         <p>
@@ -490,7 +490,7 @@ public class CreateFile {
 
 
         <program xml:id="delete-file-java" interactive="activecode" language="java">
-            <input>
+            <code>
             import java.io.File; 
 
             public class DeleteFile {
@@ -503,7 +503,7 @@ public class CreateFile {
                     } 
                 } 
             }
-            </input> 
+            </code> 
         </program>
 
         <p>
