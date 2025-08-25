@@ -30,7 +30,7 @@
         The best way to understand classes and objects is to see them in action. Let's define a <c>Dog</c> class in Python:
     </p>
 
-    <program language="python" xml:id="python-class-example">
+    <program xml:id="python-class-example" language="python">
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
