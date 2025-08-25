@@ -30,7 +30,7 @@
         The best way to understand classes and objects is to see them in action. Let's define a <c>Dog</c> class in Python:
     </p>
 
-    <program xml:id="python-doc-class-example" language="python">
+    <program language="python" xml:id="python-class-example">
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
@@ -71,7 +71,7 @@
         Next, we will use this class to create a new <c>Dog</c> object. We will call this new Dog object <c>my_dog</c>:
     </p>
 
-    <program xml:id="python-class-create-object" interactive="activecode" language="python" >
+    <program interactive="activecode" language="python" xml:id="python-class-create-object">
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
@@ -106,7 +106,7 @@
         Now that we have created a <c>Dog</c> object using the class we defined, we can utilize the class's methods: 
     </p>
 
-    <program xml:id="python-full-dog-class" interactive="activecode" language="python">
+    <program interactive="activecode" language="python" xml:id="python-class-full">
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
@@ -167,7 +167,7 @@
     </p>
 
 
-    <program xml:id="java-hello-world" interactive="activecode" language="java">
+    <program interactive="activecode" language="java">
         <code>
 public class Hello {
     public static void main(String[] args) {
@@ -188,7 +188,7 @@ public class Hello {
     </p>
 
 
-    <program xml:id="javac" language="java">
+    <program language="java">
         <code>
 $ javac Hello.java
 $ ls -l Hello.*
@@ -208,7 +208,7 @@ $ ls -l Hello.*
     </p>
 
 
-    <program xml:id="run-javac" language="java">
+    <program language="java">
         <code>
 $ java Hello
 Hello World!
@@ -285,7 +285,7 @@ $
     </p>
 
 
-    <program xml:id="java-use-class" language="java">
+    <program language="java">
         <code>
 public class Hello {
         </code>
@@ -307,7 +307,7 @@ public class Hello {
     </p>
 
 
-    <program xml:id="java-static-void-main" language="java">
+    <program language="java">
         <code>
 public static void main(String[] args)
         </code>
@@ -397,7 +397,7 @@ public static void main(String[] args)
     </p>
 
 
-    <program xml:id="java-println" language="java">
+    <program language="java">
         <code>
 System.out.println("Hello World!");
         </code>
@@ -426,7 +426,7 @@ System.out.println("Hello World!");
     </p>
 
 
-    <program xml:id="java-bad-formatting" language="java">
+    <program language="java">
         <code>
 System.out.println("Hello World");
 System.out.println("Hello World")
@@ -453,7 +453,7 @@ System.
     </p>
 
 
-    <program xml:id="python-hello-class" language="java">
+    <program language="java">
         <code>
 class Hello(object):
     @staticmethod
@@ -468,7 +468,7 @@ class Hello(object):
     </p>
 
 
-    <program xml:id="java-calling" language="java">
+    <program language="java">
         <code>
 &gt;&gt;&gt; Hello.main("")
 Hello World!
