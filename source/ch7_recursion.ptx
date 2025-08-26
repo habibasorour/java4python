@@ -233,6 +233,8 @@ main()
     </p>
     <program xml:id="array-sum-java-with-helper" interactive="activecode" language="java">
         <code>
+import java.util.Arrays; 
+
 public class ArrayProcessor {
     public static int sumArray(int[] arr) {
         // Handle empty array
