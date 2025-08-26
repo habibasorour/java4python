@@ -447,7 +447,7 @@ public class Ternary {
 
         // ternary:
         outp = (a % 2 == 0) ? (a * a) : (3 * x - 1);
-        System.out.println("Result: " + outp);
+        System.out.println("ternary result: " + outp);
 
         // Equivalent using if/else
         if (a % 2 == 0) {
@@ -456,7 +456,7 @@ public class Ternary {
             outp = 3 * x - 1;
         }
 
-        System.out.println("Result: " + outp);
+        System.out.println("if/else result: " + outp);
     }
 }
             </code>
