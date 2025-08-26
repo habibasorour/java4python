@@ -453,7 +453,7 @@ System.
     </p>
 
 
-    <program  xml:id="java-static" language="java">
+    <program  xml:id="java-staticmethod" language="java">
         <code>
 class Hello(object):
     @staticmethod
