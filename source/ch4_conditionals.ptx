@@ -162,8 +162,8 @@ public class ElseIf {
         <title>Using the <c>switch</c> Statement</title>
 
         <p>
-Java also supports a <c>switch</c> statement that acts something like the <c>elif</c> or Python <c>match</c> statement of Python under certain conditions. To write the grade program using a <c>switch</c> statement we would use the following:
-</p>
+Java also supports a <c>switch</c> statement that acts something like the <c>elif</c> or Python <c>match</c> statement under certain conditions. To write the grade program using a <c>switch</c> statement we would use the following:
+</p
 
         <note>
             <p>
