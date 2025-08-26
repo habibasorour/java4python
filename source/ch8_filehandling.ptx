@@ -440,7 +440,7 @@ public class CreateFile {
         <title>Deleting Files</title>
 
         <p>
-            Finally, we will take a look at using Java to delete files. This one is pretty straight-forward and follows the structure used to create files. This time, however, try/catch blocks are not needed for the program to compile. First, the CreateFile class from before will be used to create a file:
+            Lastly, we will take a look at using Java to delete a file. This is pretty straight-forward and follows the structure used to create files. Here is the <c>CreateFile</c> class from before that will be used to create a file that we will soon delete:
         </p>
 
         <program xml:id="create-file-to-delete-java" interactive="activecode" language="java">
@@ -467,47 +467,41 @@ public class CreateFile {
             </code> 
         </program>
         
-        <p>
-            The next example is Python code that can be used to delete files. This code cannot be run because importing <c>os</c> is not possible with the technologies used to write this book:
-        </p>
-
-        <program xml:id="delete-file-python" language="python">
-            import os
-            file_name = "myfile.txt"
-            if os.path.exists(file_name):
-                try:
-                    os.remove(file_name)
-                    print("Deleted", file_name)
-                except Exception as e:
-                    print("File could not be deleted.")
-            else:
-                print("File could not be deleted.")
-        </program>
 
         <p>
-            And finally, we have Java code that deletes files. We will call this class DeleteFile:
+            And finally, we have Java code that deletes a file. We will call this class <c>DeleteFile</c>:
         </p>
 
 
         <program xml:id="delete-file-java" interactive="activecode" language="java">
             <code>
-            import java.io.File; 
+import java.io.File;
+import java.io.IOException;
 
-            public class DeleteFile {
-                public static void main(String[] args) { 
-                    File myFile = new File("myfile.txt"); 
-                    if (myFile.delete()) { 
-                        System.out.println("Deleted " + myFile.getName());
-                    } else {
-                        System.out.println("File could not be deleted.");
-                    } 
-                } 
+public class DeleteFile {
+    public static void main(String[] args) {
+        try {
+            File myFile = new File("myfile.txt");
+
+            // Create the file (does nothing if it already exists)
+            myFile.createNewFile();
+            System.out.println("File created: " + myFile.getName());
+
+            // Delete the file
+            if (myFile.delete()) {
+                System.out.println("Deleted " + myFile.getName());
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
             </code> 
         </program>
 
         <p>
-            This is almost identical to the code within the try block of the CreateFile class we made earlier. The main difference is the use of the <c>delete()</c> method. This method will delete any file with the name provided when creating the myFile object. Similar to the <c>createNewFile()</c> method, it will return <c>true</c> if the file existed and could be deleted, and false if the file could not be deleted. 
+            Note that this is almost identical to the code within the <c>try</c> block of the <c>CreateFile</c> class that we made earlier. The key difference is the use of the <c>delete()</c> method which will delete the file with the name that was linked to the myFile object. Similar to the <c>createNewFile()</c> method, it will return <c>true</c> if the file exists and can be deleted, and <c>false</c> if the file cannot be deleted. 
         </p>
     </section>
 
