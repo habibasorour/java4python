@@ -163,12 +163,12 @@ public class ElseIf {
 
         <p>
 Java also supports a <c>switch</c> statement that acts something like the <c>elif</c> or Python <c>match</c> statement under certain conditions. To write the grade program using a <c>switch</c> statement we would use the following:
-</p
+</p>
 
         <note>
             <p>
                 The <c>match - case</c> statement was introduced in Python 3.10, so doesn't run in earlier version of Python. Here is an example using Python's <c>match - case</c> structure.
-            </p>
+            </p></note>
                     <program xml:id="python-match" language="python">
             <title>Match Case Example</title>
             <code>
@@ -190,7 +190,6 @@ Java also supports a <c>switch</c> statement that acts something like the <c>eli
                 print(grading(tempgrade))
             </code>
         </program>
-        </note>
 
         <p><idx><c>switch</c></idx>
             The <c>switch</c> statement in Java provides an alternative to chaining multiple <c>if-else</c> conditions,  when comparing a single variable against several constant values. It supports a variety of data types, including primitive types (<c>byte</c>, <c>short</c>, <c>char</c>, <c>int</c>), their wrapper classes, <c>enumerations</c>, and <c>String</c> (introduced in Java 7). Each <c>case</c> within a <c>switch</c> must be defined using a constant expression, and duplicate <c>case</c> values are not permitted. By default, control flow "<c>falls through</c>" from one <c>case</c> to the next unless a <c>break</c>, <c>return</c>, or <c>throw</c> statement is used to terminate execution. 
