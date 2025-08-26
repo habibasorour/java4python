@@ -501,7 +501,7 @@ public class DeleteFile {
         </program>
 
         <p>
-            Note that this is almost identical to the code within the <c>try</c> block of the <c>CreateFile </c>class we made earlier. The key difference is the use of the <c>delete()</c> method. This method will delete any file with the name that was linked to the myFile object. Similar to the <c>createNewFile()</c> method, it will return <c>true</c> if the file exists and can be deleted, and <c>false</c> if the file cannot be deleted. 
+            Note that this is almost identical to the code within the <c>try</c> block of the <c>CreateFile</c> class that we made earlier. The key difference is the use of the <c>delete()</c> method which will delete the file with the name that was linked to the myFile object. Similar to the <c>createNewFile()</c> method, it will return <c>true</c> if the file exists and can be deleted, and <c>false</c> if the file cannot be deleted. 
         </p>
     </section>
 
