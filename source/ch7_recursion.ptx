@@ -233,6 +233,8 @@ main()
     </p>
     <program xml:id="array-sum-java-with-helper" interactive="activecode" language="java">
         <code>
+import java.util.Arrays; 
+
 public class ArrayProcessor {
     public static int sumArray(int[] arr) {
         // Handle empty array
@@ -263,11 +265,11 @@ public class ArrayProcessor {
     </program>
     
     <p>
-        Compare these improved versions with the earlier problematic ones. Notice how much cleaner the method calls become: <c>processor.sum_array(numbers)</c> in Python and <c>sumArray(numbers)</c> in Java. Users no longer need to worry about providing the correct starting index or understanding the internal mechanics of the recursion. The helper method pattern creates a clear separation between what users need to know (just pass an array) and the implementation details (tracking the index through recursion).
+        Compare these improved versions with the earlier problematic ones. Notice how much cleaner the method calls become: <c>processor.sum_array(numbers)</c> in Python and <c>sumArray(numbers)</c> in Java. Users no longer need to worry about providing a starting index or understanding the internal mechanics of the recursion. The helper method pattern creates a clear separation between what users need to know (just pass an array) and the implementation details (tracking the index through recursion).
     </p>
     
     <p>
-        This helper method pattern is essential when your recursive algorithm needs to track additional state (like array positions, accumulated values, or depth counters) that the original caller shouldn't need to provide or care about. It's a fundamental pattern and technique you'll likely use frequently in recursive problem solving.
+        This helper method pattern is invaluable when your recursive algorithm needs to track additional state details (like array positions, accumulated values, or depth counters) that the original caller shouldn't need to know about or care about. It's a fundamental pattern and technique you'll likely use frequently in recursive problem solving.
     </p>
 </section>
 
