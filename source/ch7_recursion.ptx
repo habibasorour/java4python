@@ -269,7 +269,7 @@ public class ArrayProcessor {
     </p>
     
     <p>
-        This helper method pattern is invaluable when your recursive algorithm needs to track additional state detailes (like array positions, accumulated values, or depth counters) that the original caller shouldn't need to know about or care about. It's a fundamental pattern and technique you'll likely use frequently in recursive problem solving.
+        This helper method pattern is invaluable when your recursive algorithm needs to track additional state details (like array positions, accumulated values, or depth counters) that the original caller shouldn't need to know about or care about. It's a fundamental pattern and technique you'll likely use frequently in recursive problem solving.
     </p>
 </section>
 
