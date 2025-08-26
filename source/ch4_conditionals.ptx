@@ -173,6 +173,7 @@ Java also supports a <c>switch</c> statement that acts something like the <c>eli
             <title>Match Case Example</title>
             <code>
                 grade = 85
+                # Convert grade to a scale of 0-10 using integer division
                 tempgrade = grade // 10
                 def grading(tempgrade):
                     match grade:
@@ -204,8 +205,9 @@ Java also supports a <c>switch</c> statement that acts something like the <c>eli
         <program xml:id="java-switch-up" interactive="activecode" language="java">
             <code>
             public class SwitchUp {
-                public static void main(String args[]) {
+              public static void main(String args[]) {
                 int grade = 85;
+                // Convert grade to a scale of 0-10 using integer division
                 int tempgrade = grade / 10;
                 switch(tempgrade) {
                 case 10:
@@ -224,7 +226,7 @@ Java also supports a <c>switch</c> statement that acts something like the <c>eli
                 default:
                     System.out.println('F');
                 }
-            }
+              }
             }
             </code> <tests> </tests>
         </program>
