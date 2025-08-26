@@ -71,7 +71,7 @@
         Next, we will use this class to create a new <c>Dog</c> object. We will call this new Dog object <c>my_dog</c>:
     </p>
 
-    <program interactive="activecode" language="python" xml:id="python-class-create-object">
+    <program xml:id="python-class-create-object" interactive="activecode" language="python" >
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
@@ -106,7 +106,7 @@
         Now that we have created a <c>Dog</c> object using the class we defined, we can utilize the class's methods: 
     </p>
 
-    <program interactive="activecode" language="python" xml:id="python-class-full">
+    <program  xml:id="python-class-full" interactive="activecode" language="python">
         <code>
         class Dog:
             def __init__(self, name, breed, fur_color):
@@ -163,11 +163,11 @@
 
     <pre>&gt;&gt;&gt; main() "Hello World!" &gt;&gt;&gt;</pre>
     <p>
-        Now lets look at the same program written in Java:
+        Now let's look at the same program written in Java:
     </p>
 
 
-    <program interactive="activecode" language="java">
+    <program xml:id="java-world" interactive="activecode" language="java">
         <code>
 public class Hello {
     public static void main(String[] args) {
@@ -188,7 +188,7 @@ public class Hello {
     </p>
 
 
-    <program language="java">
+    <program xml:id="java-javac" language="java">
         <code>
 $ javac Hello.java
 $ ls -l Hello.*
@@ -208,7 +208,7 @@ $ ls -l Hello.*
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-run-hello" language="java">
         <code>
 $ java Hello
 Hello World!
@@ -285,7 +285,7 @@ $
     </p>
 
 
-    <program language="java">
+    <program xml:id="java-hello-first-line" language="java">
         <code>
 public class Hello {
         </code>
@@ -307,7 +307,7 @@ public class Hello {
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-public-static-void" language="java">
         <code>
 public static void main(String[] args)
         </code>
@@ -397,7 +397,7 @@ public static void main(String[] args)
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-println" language="java">
         <code>
 System.out.println("Hello World!");
         </code>
@@ -426,7 +426,7 @@ System.out.println("Hello World!");
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-messy-code" language="java">
         <code>
 System.out.println("Hello World");
 System.out.println("Hello World")
@@ -453,7 +453,7 @@ System.
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-static" language="java">
         <code>
 class Hello(object):
     @staticmethod
@@ -468,7 +468,7 @@ class Hello(object):
     </p>
 
 
-    <program language="java">
+    <program  xml:id="java-static-method" language="java">
         <code>
 &gt;&gt;&gt; Hello.main("")
 Hello World!
