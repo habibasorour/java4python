@@ -692,8 +692,8 @@ public class HistoArray {
         </program>
 
         <p>
- The main difference between this example and the previous example is that we declare <c>count</c> to be an <c>Array</c> of integers. We also can initialize short arrays directly using the syntax shown on line 7. Then notice that on line 22 we can use the square bracket notation to index into an array. 
-        </p>
+  The main difference between this example and the previous example is that we declare <c>count</c> to be an <c>Array</c> of integers. We also can initialize short arrays directly using the syntax shown here: <c>Integer[] count = {0,0,0,0,0,0,0,0,0,0}</c>Then notice that we can use the square bracket notation <c>count[idx]</c> to index into an array.
+</p>
     </section>
 
     <section xml:id="dictionary">
