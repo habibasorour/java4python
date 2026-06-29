@@ -692,7 +692,7 @@ public class HistoArray {
         </program>
 
         <p>
- The main difference between this example and the previous example is that we declare <c>count</c> to be an <c>Array</c> of integers. We also can initialize short arrays directly using the syntax shown on line 8. Then notice that on line 22 we can use the square bracket notation to index into an array. 
+ The main difference between this example and the previous example is that we declare <c>count</c> to be an <c>Array</c> of integers. We also can initialize short arrays directly using the syntax shown on line 7. Then notice that on line 22 we can use the square bracket notation to index into an array. 
         </p>
     </section>
 
