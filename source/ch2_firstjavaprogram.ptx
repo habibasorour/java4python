@@ -240,8 +240,8 @@ $
         <idx>JVM</idx>
         <idx>byte code</idx>
         The job of the compiler is to turn your java code into language that the Java Virtual Machine (<term>JVM</term>) can understand.
-        We call the code that the JVM understands <term>byte code</term>.
-        The JVM interprets the byte code much like the Python interpreter interprets your Python.
+        JVM is a <term>bytecode</term> interpreter that allows Java programs to run on any platform without having to modify them.
+        The JVM interprets the byte code much like the Python interpreter does with Python.
         However since byte code is much closer to the native language of the computer it can run faster.
     </p>
 
