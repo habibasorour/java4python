@@ -87,7 +87,7 @@
                 self.name = name
                 self.breed = breed
                 self.fur_color = fur_color
-                self.trained = False
+                self.trained = False # dogs are not trained by default
                 print("Dog named " + self.name + " created!")
 
             def bark(self):
@@ -111,7 +111,7 @@
     </program>
     </listing>
     <p>
-        In the final line of code, we have created an object called <c>my_dog</c>. We have initialized its attributes, setting <c>name</c> to Rex, <c>breed</c> to pug, and <c>fur_color</c> to brown.
+        In the final line of code in <xref ref="python-class-create-object" text="type-global"/>, we have created an object called <c>my_dog</c>. We have initialized its attributes, setting <c>name</c> to Rex, <c>breed</c> to pug, and <c>fur_color</c> to brown.
     </p>
 
     <p>
@@ -128,7 +128,7 @@
                 self.name = name
                 self.breed = breed
                 self.fur_color = fur_color
-                self.trained = False
+                self.trained = False # dogs are not trained by default
                 print("Dog named " + self.name + " created!")
 
             def bark(self):
