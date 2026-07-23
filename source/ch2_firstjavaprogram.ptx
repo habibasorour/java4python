@@ -175,25 +175,34 @@
         To be clear, lets look at a &#x201C;complicated&#x201D; version of hello world for Python:
     </p>
 
-    <program xml:id="python-hello-world" language="python">
+    <listing xml:id="python-hello-world">
+    <program language="python">
         <code>
         def main(): 
             print("Hello World!")
         </code>
     </program>
+    </listing>
 
     <p>
         Remember that we can define this program right at the Python command line and then run it:
     </p>
 
-    <pre>&gt;&gt;&gt; main() 
-Hello World! </pre>
+    <listing xml:id="python-hello-world-run">
+    <program language="python">
+        <code>
+&gt;&gt;&gt; main() 
+Hello World! </code>
+    </program>
+    </listing>
+
     <p>
         Now let's look at the same program written in Java:
     </p>
 
 
-    <program xml:id="java-world" interactive="activecode" language="java">
+    <listing xml:id="java-world">
+    <program interactive="activecode" language="java">
         <code>
 public class Hello {
     public static void main(String[] args) {
@@ -202,6 +211,7 @@ public class Hello {
 }
         </code> <tests> </tests>
     </program>
+    </listing>
 
     <p>
  What we see is that at the core there are a few similarities, such as a main and the string &#x201C;Hello World&#x201D;. However, there is a lot more stuff around the edges that make it harder to see the core of the program. Do not worry! An important skill for a computer scientist is to learn what to ignore and what to look at carefully. You will soon find that there are some elements of Java that will fade into the background as you become used to seeing them.
@@ -214,7 +224,8 @@ public class Hello {
     </p>
 
 
-    <program xml:id="java-javac" language="java">
+    <listing xml:id="java-javac">
+    <program language="java">
         <code>
 $ javac Hello.java
 $ ls -l Hello.*
@@ -222,6 +233,7 @@ $ ls -l Hello.*
 -rw-r--r--   1 bmiller  bmiller  117 Jul 19 17:46 Hello.java
         </code>
     </program>
+    </listing>
 
     <p>
         The command <c>javac</c> compiles our java source code into compiled byte code and saves it in a file called <c>Hello.class</c>.
@@ -234,13 +246,16 @@ $ ls -l Hello.*
     </p>
 
 
-    <program  xml:id="java-run-hello" language="java">
+    <listing xml:id="java-run-hello">
+    <program language="java">
         <code>
 $ java Hello
 Hello World!
 $
         </code>
     </program>
+    </listing>
+
 
     <p>
         Now you may be wondering what good is that extra step? What does compiling do for us? There are a couple of important benefits we get from compiling:
@@ -310,7 +325,7 @@ $
         On line 1 we see that we are declaring a class called Hello:
     </p>
 
-
+    
     <program xml:id="java-hello-first-line" language="java">
         <code>
 public class Hello {
@@ -451,8 +466,8 @@ System.out.println("Hello World!");
         I would not encourage you to write your code like this, but you should know that it is legal.
     </p>
 
-
-    <program  xml:id="java-messy-code" language="java">
+    <listing xml:id="java-messy-code">
+    <program language="java">
         <code>
 System.out.println("Hello World");
 System.out.println("Hello World")
@@ -467,6 +482,7 @@ System.
     ;
         </code>
     </program>
+    </listing>
 
     <p>
         The last two lines of the hello world program simply close the two blocks using <c>}</c>.
@@ -478,8 +494,8 @@ System.
         If we wanted to translate the Java back to Python we would have something like the following class definition.
     </p>
 
-
-    <program  xml:id="java-staticmethod" language="java">
+    <listing xml:id="java-staticmethod">
+    <program language="java">
         <code>
 class Hello(object):
     @staticmethod
@@ -487,6 +503,7 @@ class Hello(object):
         print("Hello World!")
         </code>
     </program>
+    </listing>
 
     <p>
         Notice that we used the decorator <c>@staticmethod</c> to tell the Python interpreter that <c>main</c> is going to be a static method.
@@ -494,13 +511,16 @@ class Hello(object):
     </p>
 
 
-    <program  xml:id="java-static-method" language="java">
+    <listing xml:id="java-static-method">
+    <program language="java">
         <code>
 &gt;&gt;&gt; Hello.main("")
 Hello World!
 &gt;&gt;&gt;
         </code>
     </program>
+    </listing>
+
 </section>
     <section xml:id="lets_look_java_program_summary">
         <title>Summary &amp; Reading Questions</title>
