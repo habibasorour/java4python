@@ -156,12 +156,19 @@
         To be clear, lets look at a &#x201C;complicated&#x201D; version of hello world for Python:
     </p>
 
-    <pre>def main(): print("Hello World!")</pre>
+    <program xml:id="python-hello-world" language="python">
+        <code>
+        def main(): 
+            print("Hello World!")
+        </code>
+    </program>
+
     <p>
         Remember that we can define this program right at the Python command line and then run it:
     </p>
 
-    <pre>&gt;&gt;&gt; main() "Hello World!" &gt;&gt;&gt;</pre>
+    <pre>&gt;&gt;&gt; main() 
+Hello World! </pre>
     <p>
         Now let's look at the same program written in Java:
     </p>
