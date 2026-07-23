@@ -490,11 +490,11 @@ System.
     </p>
 
     <p>
-        If we wanted to translate the Java back to Python we would have something like <xref ref="python-hello-world" text="type-global"/> class definition.
+        If we wanted to translate the Java back to Python we would have something like <xref ref="python-static-method" text="type-global"/> class definition.
     </p>
 
-    <listing xml:id="java-staticmethod">
-    <program language="java">
+    <listing xml:id="python-static-method">
+    <program language="python">
         <code>
 class Hello(object):
     @staticmethod
@@ -506,12 +506,12 @@ class Hello(object):
 
     <p>
         Notice that we used the decorator <c>@staticmethod</c> to tell the Python interpreter that <c>main</c> is going to be a static method.
-        The impact of this is that we don&#x2019;t have to, indeed we should not, use <c>self</c> as the first parameter of the main method! Using this definition we can call the main method in a Python session like this:
+        The impact of this is that we don&#x2019;t have to, indeed we should not, use <c>self</c> as the first parameter of the main method! Using this definition we can call the main method in a Python session like <xref ref="python-static-method-run" text="type-global"/>.
     </p>
 
 
-    <listing xml:id="java-static-method">
-    <program language="java">
+    <listing xml:id="python-static-method-run">
+    <program language="python">
         <code>
 &gt;&gt;&gt; Hello.main("")
 Hello World!
