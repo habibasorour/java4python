@@ -170,17 +170,24 @@
 <section xml:id="sec-lets-look-at-a-java-program">
     <title>Lets look at a Java Program</title>
     <p>
-        A time-honored tradition in Computer Science is to write a program called &#x201C;hello world.&#x201D; The &#x201C;hello world&#x201D; program is simple and easy.
+        A time-honored tradition in Computer Science is to write a program called &#x201C;Hello World.&#x201D; The &#x201C;Hello World&#x201D; program is simple and easy.
         There are no logic errors to make, so getting it to run relies only on understanding the syntax.
         To be clear, lets look at a &#x201C;complicated&#x201D; version of hello world for Python:
     </p>
 
-    <pre>def main(): print("Hello World!")</pre>
+    <program xml:id="python-hello-world" language="python">
+        <code>
+        def main(): 
+            print("Hello World!")
+        </code>
+    </program>
+
     <p>
         Remember that we can define this program right at the Python command line and then run it:
     </p>
 
-    <pre>&gt;&gt;&gt; main() "Hello World!" &gt;&gt;&gt;</pre>
+    <pre>&gt;&gt;&gt; main() 
+Hello World! </pre>
     <p>
         Now let's look at the same program written in Java:
     </p>
