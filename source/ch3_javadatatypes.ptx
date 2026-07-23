@@ -91,7 +91,7 @@
             </p>
 
             <p>
-                Let&#x2019;s look at a simple Python function which converts a Fahrenheit temperature to Celsius.
+                <xref ref="python-temperature-conversion" text="type-global"/> is a simple Python function which converts a Fahrenheit temperature to Celsius.
                 If this program were run on the command-line, you would enter the temperature when prompted &#x2013; the Javascript pop-up for input is only an artifact of the digital textbook.
             </p>
 
@@ -108,7 +108,7 @@ main()
             </listing>
 
             <p>
- Next, lets look at the Java equivalent. If this program were run on the command-line, you would enter the temperature when prompted &#x2013; the &#x201C;Input for Program&#x201D; text box is only an artifact of the digital textbook. 
+ Next, <xref ref="java-temperature-conversion" text="type-global"/> is the Java equivalent. If this program were run on the command-line, you would enter the temperature when prompted &#x2013; the &#x201C;Input for Program&#x201D; text box is only an artifact of the digital textbook. 
             </p>
 
 
@@ -131,7 +131,7 @@ public class TempConv {
                 </code> <stdin> </stdin> <tests> </tests>
             </program>
             </listing>
-            
+
             <p>
  There are several new concepts introduced in this example. We will look at them in the following order: 
             </p>
