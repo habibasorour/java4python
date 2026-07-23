@@ -84,7 +84,7 @@ public class CreateFile {
     public static void main(String[] args) {
         // First, create a File object that represents "myfile.txt"
         File myFile = new File("myfile.txt"); 
-        // Mext, print the file path (just the filename.)
+        // Next, print the file path (just the filename.)
         System.out.println(myFile); 
     }
 }

@@ -18,6 +18,7 @@
             </p>
 
             <table>
+            <title> Comparison between Java's primitive and object data types.  </title>
                 <tabular>
                     <row header="yes">
                         <cell> Primitive </cell>

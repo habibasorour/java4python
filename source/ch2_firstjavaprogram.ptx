@@ -30,32 +30,39 @@
         The best way to understand classes and objects is to see them in action. Let's define a <c>Dog</c> class in Python:
     </p>
 
-    <program xml:id="python-class-example" language="python">
-        <code>
+    <listing xml:id="python-class-example">
+        <program language="python">
+            <code>
         class Dog:
+        """ A simple Dog class definition. """
             def __init__(self, name, breed, fur_color):
+            # constructor method to create a Dog object
                 self.name = name
                 self.breed = breed
                 self.fur_color = fur_color
-                self.trained = False
+                self.trained = False # dogs are not trained by default
                 print("Dog named " + self.name + " created!")
 
             def bark(self):
+            # method to make the dog bark
                 print(self.name + " says woof!")
                 
             def sit(self):
-                if self.trained:
+            # method to make the dog sit
+                if self.trained: # check if the dog has been trained otherwise it will not sit
                     print(self.name + " sits.")
                 else:
                     print(self.name + " has not been trained.")
                     
             def train(self):
+            # method to train the dog, which will set the trained attribute to True
                 self.trained = True
-        </code>
-    </program>
+            </code>
+        </program>
+    </listing>
 
     <p>
-        Let's unpack what is going on in this code. The first line is where we declare the class definition and name it <c>Dog</c>. Next, we have a special method called <c>__init__</c>. This <c>__init__</c> method is the constructor and is required for every Python class definition. Within the <c>__init__</c> method, attributes are defined. As you can see, the attributes <c>name</c>, <c>breed</c>, and <c>fur_color</c> must be defined when creating a Dog object using this class definition, but the <c>trained</c> attribute is defined within the constructor and is initialized as <c>False</c>. We can also have the <c>__init__</c> method run any code, such as the print statement informing us that a Dog object was created.
+        Let's unpack what is going on in <xref ref="python-class-example" text="type-global"/>. The first line is where we declare the class definition and name it <c>Dog</c>. Next, we have a special method called <c>__init__</c>. This <c>__init__</c> method is the constructor and is required for every Python class definition. Within the <c>__init__</c> method, attributes are defined. As you can see, the attributes <c>name</c>, <c>breed</c>, and <c>fur_color</c> must be defined when creating a Dog object using this class definition, but the <c>trained</c> attribute is defined within the constructor and is initialized as <c>False</c>. We can also have the <c>__init__</c> method run any code, such as the print statement informing us that a Dog object was created.
     </p>
 
     <p>
@@ -70,74 +77,86 @@
     <p>
         Next, we will use this class to create a new <c>Dog</c> object. We will call this new Dog object <c>my_dog</c>:
     </p>
-
-    <program xml:id="python-class-create-object" interactive="activecode" language="python" >
+    <listing xml:id="python-class-create-object" names="python-class-create-object">
+    <program interactive="activecode" language="python" >
         <code>
         class Dog:
+            """ A simple Dog class definition. """
             def __init__(self, name, breed, fur_color):
+            # constructor method to create a Dog object
                 self.name = name
                 self.breed = breed
                 self.fur_color = fur_color
-                self.trained = False
+                self.trained = False # dogs are not trained by default
                 print("Dog named " + self.name + " created!")
 
             def bark(self):
+            # method to make the dog bark
                 print(self.name + " says woof!")
                 
             def sit(self):
-                if self.trained:
+            # method to make the dog sit
+                if self.trained: # check if the dog has been trained otherwise it will not sit
                     print(self.name + " sits.")
                 else:
                     print(self.name + " has not been trained.")
                     
             def train(self):
+            # method to train the dog, which will set the trained attribute to True
                 self.trained = True
 
-        
+        # Create a Dog object called my_dog
         my_dog = Dog("Rex", "pug", "brown")
         </code>
     </program>
-
+    </listing>
     <p>
-        In the final line of code, we have created an object called <c>my_dog</c>. We have initialized its attributes, setting <c>name</c> to Rex, <c>breed</c> to pug, and <c>fur_color</c> to brown.
+        In the final line of code in <xref ref="python-class-create-object" text="type-global"/>, we have created an object called <c>my_dog</c>. We have initialized its attributes, setting <c>name</c> to Rex, <c>breed</c> to pug, and <c>fur_color</c> to brown.
     </p>
 
     <p>
         Now that we have created a <c>Dog</c> object using the class we defined, we can utilize the class's methods: 
     </p>
 
-    <program  xml:id="python-class-full" interactive="activecode" language="python">
+    <listing xml:id="python-class-full" names="python-class-full">
+    <program interactive="activecode" language="python">
         <code>
         class Dog:
+            """ A simple Dog class definition. """
             def __init__(self, name, breed, fur_color):
+            # constructor method to create a Dog object
                 self.name = name
                 self.breed = breed
                 self.fur_color = fur_color
-                self.trained = False
+                self.trained = False # dogs are not trained by default
                 print("Dog named " + self.name + " created!")
 
             def bark(self):
+            # method to make the dog bark
                 print(self.name + " says woof!")
                 
             def sit(self):
+            # method to make the dog sit
                 if self.trained:
                     print(self.name + " sits.")
                 else:
                     print(self.name + " has not been trained.")
                     
             def train(self):
+            # method to train the dog, which will set the trained attribute to True
                 self.trained = True
 
         
         my_dog = Dog("Rex", "pug", "brown")
-        my_dog.bark()
-        my_dog.sit()
+        my_dog.bark() # call the bark method
+        my_dog.sit() # call the sit method
         </code>
     </program>
+    </listing>
 
     <note>
         <p>
-            When running the code above, the line <c>Rex has not ben trained.</c> will appear in the output when calling the <c>sit()</c> method. Try adding a one or more lines of code so that <c>Rex sits.</c> appears in the output!
+            When running <xref ref="python-class-full" text="type-global"/>, the line <c>Rex has not been trained.</c> will appear in the output when calling the <c>sit()</c> method. Try adding a one or more lines of code so that <c>Rex sits.</c> appears in the output!
         </p>
     </note>
 
