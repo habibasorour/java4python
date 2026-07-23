@@ -156,7 +156,7 @@
 
     <note>
         <p>
-            When running <xref ref="python-class-full" text="type-global"/>, the line <c>Rex has not ben trained.</c> will appear in the output when calling the <c>sit()</c> method. Try adding a one or more lines of code so that <c>Rex sits.</c> appears in the output!
+            When running <xref ref="python-class-full" text="type-global"/>, the line <c>Rex has not been trained.</c> will appear in the output when calling the <c>sit()</c> method. Try adding a one or more lines of code so that <c>Rex sits.</c> appears in the output!
         </p>
     </note>
 
