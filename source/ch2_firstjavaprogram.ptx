@@ -163,37 +163,45 @@
     <p>
         Now, we have a full class definition and have utilized its methods. Class definitions in Java will be covered thoroughly in chapter 6. For now, it is important to know that Python programs can be written without using classes at all. Java, on the other hand, requires all code to reside in a class. This will be discussed in the next section.
     </p>
-
-
-    
+ 
 </section>
+
 <section xml:id="sec-lets-look-at-a-java-program">
     <title>Lets look at a Java Program</title>
     <p>
         A time-honored tradition in Computer Science is to write a program called &#x201C;Hello World.&#x201D; The &#x201C;Hello World&#x201D; program is simple and easy.
         There are no logic errors to make, so getting it to run relies only on understanding the syntax.
-        To be clear, lets look at a &#x201C;complicated&#x201D; version of hello world for Python:
+        To be clear, lets look at a &#x201C;complicated&#x201D; version of hello world for Python in <xref ref="python-hello-world" text="type-global"/>.
     </p>
 
-    <program xml:id="python-hello-world" language="python">
+    <listing xml:id="python-hello-world">
+    <program language="python">
         <code>
         def main(): 
             print("Hello World!")
         </code>
     </program>
+    </listing>
 
     <p>
-        Remember that we can define this program right at the Python command line and then run it:
+        Remember that we can define this program right at the Python command line and then run it as per <xref ref="python-hello-world-run" text="type-global"/>.
     </p>
 
-    <pre>&gt;&gt;&gt; main() 
-Hello World! </pre>
+    <listing xml:id="python-hello-world-run">
+    <program language="python">
+        <code>
+&gt;&gt;&gt; main() 
+Hello World! </code>
+    </program>
+    </listing>
+
     <p>
         Now let's look at the same program written in Java:
     </p>
 
 
-    <program xml:id="java-world" interactive="activecode" language="java">
+    <listing xml:id="java-world">
+    <program interactive="activecode" language="java">
         <code>
 public class Hello {
     public static void main(String[] args) {
@@ -202,19 +210,21 @@ public class Hello {
 }
         </code> <tests> </tests>
     </program>
+    </listing>
 
     <p>
- What we see is that at the core there are a few similarities, such as a main and the string &#x201C;Hello World&#x201D;. However, there is a lot more stuff around the edges that make it harder to see the core of the program. Do not worry! An important skill for a computer scientist is to learn what to ignore and what to look at carefully. You will soon find that there are some elements of Java that will fade into the background as you become used to seeing them.
+ Based on <xref ref="java-world" text="type-global"/>, what we see in the code is that at the core there are a few similarities, such as a main and the string &#x201C;Hello World&#x201D;. However, there is a lot more stuff around the edges that make it harder to see the core of the program. Do not worry! An important skill for a computer scientist is to learn what to ignore and what to look at carefully. You will soon find that there are some elements of Java that will fade into the background as you become used to seeing them.
     </p>
 
     <p>
         <idx>interpreter</idx>
         <idx>compile</idx>
- The first question you probably have about this little program is &#x201C;How do I run it?&#x201D; Running a Java program is not as simple as running a Python program. The first thing you need to do with a Java program is compile it. The first big difference between Java and Python is that Python is an interpreted language. We could run our Python programs in the Python <term>interpreter</term> and we were quite happy to do that. Java makes running programs a two step process. First we must type the hello world program into a file and save that file using the name <c>Hello.java</c> The file name must be the same as the public class you define in the file. Once we have saved the file we <term>compile</term> it from the command line as follows: 
+ The first question you probably have about this little program is &#x201C;How do I run it?&#x201D; Running a Java program is not as simple as running a Python program. The first thing you need to do with a Java program is compile it. The first big difference between Java and Python is that Python is an interpreted language. We could run our Python programs in the Python <term>interpreter</term> and we were quite happy to do that. Java makes running programs a two step process. First we must type the hello world program into a file and save that file using the name <c>Hello.java</c> The file name must be the same as the public class you define in the file. Once we have saved the file we <term>compile</term> it from the command line as <xref ref="java-javac" text="type-global"/>. 
     </p>
 
 
-    <program xml:id="java-javac" language="java">
+    <listing xml:id="java-javac">
+    <program language="java">
         <code>
 $ javac Hello.java
 $ ls -l Hello.*
@@ -222,6 +232,7 @@ $ ls -l Hello.*
 -rw-r--r--   1 bmiller  bmiller  117 Jul 19 17:46 Hello.java
         </code>
     </program>
+    </listing>
 
     <p>
         The command <c>javac</c> compiles our java source code into compiled byte code and saves it in a file called <c>Hello.class</c>.
@@ -230,17 +241,20 @@ $ ls -l Hello.*
     </p>
 
     <p>
-        Now that we have compiled our java source code we can run the compiled code using the <c>java</c> command.
+        Now that we have compiled our java source code we can run the compiled code using the <c>java</c> command as per <xref ref="java-run-hello" text="type-global"/>.
     </p>
 
 
-    <program  xml:id="java-run-hello" language="java">
+    <listing xml:id="java-run-hello">
+    <program language="java">
         <code>
 $ java Hello
 Hello World!
 $
         </code>
     </program>
+    </listing>
+
 
     <p>
         Now you may be wondering what good is that extra step? What does compiling do for us? There are a couple of important benefits we get from compiling:
@@ -310,7 +324,7 @@ $
         On line 1 we see that we are declaring a class called Hello:
     </p>
 
-
+    
     <program xml:id="java-hello-first-line" language="java">
         <code>
 public class Hello {
@@ -447,12 +461,12 @@ System.out.println("Hello World!");
         Java statements can spread across many lines, but the compiler knows it has reached the end of a statement when it encounters a <c>;</c>.
         In Python, it is not required (or recommend) to use semicolons in this way, but whitespace is meaningful.
         In contrast, in Java semicolons are <term>required</term> to end statements, but whitespace is not considered meaningful.
-        This is a very important difference to remember! In Java, the following statements are all legal and equivalent.
+        This is a very important difference to remember! In Java, the  statements in <xref ref="java-messy-code" text="type-global"/> are all legal and equivalent.
         I would not encourage you to write your code like this, but you should know that it is legal.
     </p>
 
-
-    <program  xml:id="java-messy-code" language="java">
+    <listing xml:id="java-messy-code">
+    <program language="java">
         <code>
 System.out.println("Hello World");
 System.out.println("Hello World")
@@ -467,6 +481,7 @@ System.
     ;
         </code>
     </program>
+    </listing>
 
     <p>
         The last two lines of the hello world program simply close the two blocks using <c>}</c>.
@@ -475,11 +490,11 @@ System.
     </p>
 
     <p>
-        If we wanted to translate the Java back to Python we would have something like the following class definition.
+        If we wanted to translate the Java back to Python we would have something like <xref ref="python-static-method" text="type-global"/> class definition.
     </p>
 
-
-    <program  xml:id="java-staticmethod" language="java">
+    <listing xml:id="python-static-method">
+    <program language="python">
         <code>
 class Hello(object):
     @staticmethod
@@ -487,20 +502,24 @@ class Hello(object):
         print("Hello World!")
         </code>
     </program>
+    </listing>
 
     <p>
         Notice that we used the decorator <c>@staticmethod</c> to tell the Python interpreter that <c>main</c> is going to be a static method.
-        The impact of this is that we don&#x2019;t have to, indeed we should not, use <c>self</c> as the first parameter of the main method! Using this definition we can call the main method in a Python session like this:
+        The impact of this is that we don&#x2019;t have to, indeed we should not, use <c>self</c> as the first parameter of the main method! Using this definition we can call the main method in a Python session like <xref ref="python-static-method-run" text="type-global"/>.
     </p>
 
 
-    <program  xml:id="java-static-method" language="java">
+    <listing xml:id="python-static-method-run">
+    <program language="python">
         <code>
 &gt;&gt;&gt; Hello.main("")
 Hello World!
 &gt;&gt;&gt;
         </code>
     </program>
+    </listing>
+
 </section>
     <section xml:id="lets_look_java_program_summary">
         <title>Summary &amp; Reading Questions</title>
